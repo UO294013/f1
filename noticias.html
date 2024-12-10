@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>F1 Desktop</title>
+    <link rel="icon" href="multimedia/imagenes/favicon.ico" sizes="48x48">
+    <meta name="author" content="Vicente Megido García (UO294013)" />
+    <meta name="description" content="Contenidos relacionados con las noticias de la F1" />
+    <meta name="keywords" content="F1, Fórmula 1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/article_elements.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/noticias.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" title="Ir a la página principal">F1 Desktop</a></h1>
+        <nav>
+            <a href="index.html" title="Ir a Inicio">Inicio</a>
+            <a href="piloto.html" title="Ir a Piloto">Piloto</a>
+            <a class="active" href="noticias.html" title="Ir a Noticias">Noticias</a>
+            <a href="calendario.html" title="Ir a Calendario">Calendario</a>
+            <a href="meteorología.html" title="Ir a Meteorología">Meteorología</a>
+            <a href="circuito.html" title="Ir a Circuito">Circuito</a>
+            <a href="php/viajes.php" title="Ir a Viajes">Viajes</a>
+            <a href="juegos.html" title="Ir a Juegos">Juegos</a>
+        </nav>
+    </header>
+    <p>Estás en: <a href="index.html" title="Ir a Inicio">Inicio</a> >> Noticias</p>
+    <main>
+        <h2>Noticias</h2>
+        <label for="fileChooser">Selecciona un archivo para importar las noticias: </label>
+        <input type="file" id="fileChooser" onchange="news.readInputFile(this.files);">
+        <p><!-- Título de la noticia --></p>  
+        <pre><!-- Contenido de la noticia --></pre>
+        <p><!-- Nombre del autor de la noticia --></p>
+    
+        <form>
+            <h3>Añadir Nueva Noticia</h3>
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" placeholder="Título" required>
+    
+            <label for="contenido">Contenido:</label>
+            <textarea id="contenido" rows="4" placeholder="Contenido" required></textarea>
+                    
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" placeholder="Autor" required>
+    
+            <button type="submit">Agregar Noticia</button>
+        </form>
+    </main>
+</body>
+</html>
