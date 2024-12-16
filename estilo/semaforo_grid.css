@@ -1,0 +1,129 @@
+/* Vicente Megido García (UO294013) */
+
+/* Selector Specificity: 002 */
+body main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Selector Specificity: 002 */
+main h2 {
+    grid-column: span 4;
+    font-size: 1.4em;
+    text-align: center;
+    align-self: center;
+}
+
+/* Selector Specificity: 003 */
+main script~div {
+    width: 10vw;
+    height: 10vw; /* Para mantener la proporción redonda utilizo vw */
+    background-color: #404040;
+    border: 0.3em solid #000000;
+    border-radius: 50%;
+}
+
+/* Selector Specificity: 022 */
+main.load>div:nth-child(4) {
+    animation: lightUp 0.5s forwards;
+}
+
+/* Selector Specificity: 022 */
+main.load>div:nth-child(5) {
+    animation: lightUp 0.5s forwards 0.5s;
+}
+
+/* Selector Specificity: 022 */
+main.load>div:nth-child(6) {
+    animation: lightUp 0.5s forwards 1s;
+}
+
+/* Selector Specificity: 022 */
+main.load>div:nth-child(7) {
+    animation: lightUp 0.5s forwards 1.5s;
+}
+
+/* Selector Specificity: 012 */
+main.unload>div {
+    animation: out;
+}
+
+/* Keyframe de encendido */
+@keyframes lightUp {
+    from { background-color: #404040; }
+    to { background-color: #DD0000; }
+}
+
+/* Keyframe de apagado */
+@keyframes out {
+    from { background-color: #DD0000; }
+    to { background-color: #404040; }
+}
+
+/* Selector Specificity: 002 */
+main p {
+    grid-column: span 4;
+    font-size: 1.1em;
+}
+
+/* Selector Specificity: 002 */
+main button {
+    grid-column: span 2;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    padding: 1% 10%;
+    font-size: 1.2em;
+    border: 0.2em solid #000000;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+/* Selector Specificity: 011 */
+button:disabled {
+    background-color: #606060;
+    cursor: not-allowed;
+}
+
+main form {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+
+/* Selector Specificity: 002 */
+main input {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 1.1em;
+    border: 0.2em solid #000000;
+    resize: none;
+}
+
+/* Selector Specificity: 002 */
+main label {
+    font-size: 1.1em;
+    text-align: center;
+    align-self: center;
+}
+
+/* Selector Specificity: 003 */
+main form button {
+    grid-column: span 8;
+    align-self: center;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Selector Specificity: 002 */
+main section {
+    grid-column: span 4;
+}
