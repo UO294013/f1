@@ -113,7 +113,7 @@ button {
 /* Tablet (768px) */
 @media screen and (max-width: 768px) {
 
-        /* Selector Specificity: 010 */
+    /* Selector Specificity: 010 */
     [data-game=memory-game] {
         padding: 0% 10% 2%;
     }
@@ -134,14 +134,23 @@ button {
     }
 }
 
-/* Movil M (375px) */
-@media screen and (max-width: 375px) {
+/* Movil L (425px) */
+@media screen and (max-width: 425px) {
+
+    /* Selector Specificity: 010 */
+    [data-game=memory-game] {
+        padding: 0% 5% 1%;
+    }
 
     /* Selector Specificity: 001 */
     article {
         border-radius: 0.1em;
     }
+}
 
+/* Movil M (375px) */
+@media screen and (max-width: 375px) {
+    
     /* Selector Specificity: 002 */
     article>h3 {
         font-size: 0.6em;

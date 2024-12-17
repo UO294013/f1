@@ -60,7 +60,7 @@ body {
 /* Selector Specificity: 002 */
 body>p {
     margin-left: 0.8em;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 /* Selector Specificity: 001 */
@@ -303,6 +303,11 @@ div~article section img {
     object-fit: cover;
     border-radius: 0.5em;
     box-shadow: none;
+}
+
+/* Selector Specificity: 002 */
+div~form {
+    width: 100%;
 }
 
 /* Selector Specificity: 002 */

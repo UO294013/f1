@@ -67,19 +67,17 @@ header>nav {
     }
 }
 
-/* Movil L (375px) */
+/* Movil L (425px) */
 @media screen and (max-width: 425px) {
 
     /* Selector Specificity: 003 */
     header>nav>a {
-        font-size: 0.6em;
-        flex: 0 1 calc(25% - 0.5em);
-        box-sizing: border-box;
-        text-align: center;
+        font-size: 0.7em;
+        flex: 0 1 calc(50% - 1em);
     }
 
     /* Selector Specificity: 002 */
     header>h1 {
-        font-size: 0.5em;
+        font-size: 1em;
     }
 }
