@@ -22,7 +22,7 @@
             <a href="calendario.html" title="Ir a Calendario">Calendario</a>
             <a href="meteorología.html" title="Ir a Meteorología">Meteorología</a>
             <a href="circuito.html" title="Ir a Circuito">Circuito</a>
-            <a href="php/viajes.php" title="Ir a Viajes">Viajes</a>
+            <a href="viajes.php" title="Ir a Viajes">Viajes</a>
             <a class="active" href="juegos.html" title="Ir a Juegos">Juegos</a>
         </nav>
     </header>
@@ -30,95 +30,94 @@
     <main>
         <menu>
             <li><a href="memoria.html" title="Ir a Juego de Memoria">Memoria</a></li>
-            <li><a href="php/semaforo.php" title="Ir a Juego de Reacción">Reacción</a></li>
+            <li><a href="semaforo.php" title="Ir a Juego de Reacción">Reacción</a></li>
             <li><a href="api.html" title="Ir a Juego extra de APIs">API</a></li>
             <li><a href="php/libre.php" title="Ir al ejercicio extra de PHP F1Strategy">F1Strategy</a></li>
         </menu>
         <button type="button">Pantalla Completa</button>
-        <label for="volumeControl">Volumen del juego:</label>
-        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.1">
         <button type="button">Cómo jugar</button>
         <button type="button">Reiniciar</button>
-        <textarea readonly>Fallos: 0</textarea>
+        <label for="contadorFallos">Fallos: </label>
+        <textarea id="contadorFallos" readonly>0</textarea>
         <section>
             <h2>Juego de Drag & Drop F1 Desktop: Coloca el circuito correcto</h2>
             <figure>
                 <!-- Aquí va la foto del circuito actual que se debe adivinar -->
-                <img src="" alt="Imagen del circuito actual" />
+                <img src="multimedia/imagenes/api_bahrein_img.jpg"  loading="lazy" alt="Imagen del circuito actual" />
             </figure>
         </section>
         <footer>
             <figure>
-                <img src="multimedia/imagenes/api_bahrein.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_bahrein.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_jeddah.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_jeddah.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_melbourne.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_melbourne.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_suzuka.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_suzuka.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_shanghai.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_shanghai.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_miami.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_miami.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_imola.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_imola.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_monaco.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_monaco.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_canada.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_canada.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_barcelona.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_barcelona.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_austria.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_austria.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_silverstone.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_silverstone.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_hungria.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_hungria.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_spa.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_spa.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_zandvoort.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_zandvoort.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_monza.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_monza.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_baku.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_baku.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_singapur.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_singapur.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_austin.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_austin.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_mexico.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_mexico.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_brasil.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_brasil.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_las_vegas.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_las_vegas.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_losail.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_losail.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
             <figure>
-                <img src="multimedia/imagenes/api_abu_dhabi.png" draggable="true" alt="Imagen del trazado de un circuito de F1" />
+                <img src="multimedia/imagenes/api_abu_dhabi.png" draggable="true" loading="lazy" alt="Imagen del trazado de un circuito de F1" />
             </figure>
         </footer>
     </main>

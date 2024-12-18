@@ -23,30 +23,32 @@
             <a href="calendario.html" title="Ir a Calendario">Calendario</a>
             <a href="meteorología.html" title="Ir a Meteorología">Meteorología</a>
             <a class="active" href="circuito.html" title="Ir a Circuito">Circuito</a>
-            <a href="php/viajes.php" title="Ir a Viajes">Viajes</a>
+            <a href="viajes.php" title="Ir a Viajes">Viajes</a>
             <a href="juegos.html" title="Ir a Juegos">Juegos</a>
         </nav>
     </header>
     <p>Estás en: <a href="index.html" title="Ir a Inicio">Inicio</a> >> Circuito</p>
     <main>
+        <script>
+            var circuito = new Circuito();
+        </script>
         <h2>Circuito</h2>
         <label for="xml">Carga de XML: </label>
-        <input type="file" name="xml" accept=".xml">
+        <input type="file" id="xml" name="xml" accept=".xml">
         <section>
-            <h4>¡Aquí se mostrará el contenido del archivo XML!</h4>
+            <h3>¡Aquí se mostrará el contenido del archivo XML!</h3>
             <!-- Aquí va el contenido del XML -->
         </section>
         <p><!-- En caso de errores de lectura del archivo --></p>
         <!-- Carga de KML -->
         <label for="kml">Carga de KML: </label>
-        <input type="file" name="kml" accept=".kml" onchange="handleFileSelect(event)">
-        <p>Mapa sobre el que se mostrará la ruta generada por el archivo KML:</p>
-        <div></div>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=iniciarMapa"></script>
+        <input type="file" id="kml" name="kml" accept=".kml">
+        <p>¡Aquí se mostrará el mapa con el KML!</p>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfmip4lu4OXDuJ-DSiuoXLYb26CCQQEGk&loading=async"></script>
         <!-- Carga de SVG -->
         <label for="svg">Carga de SVG: </label>
-        <input type="file" name="svg" accept=".svg">
-        <p>Plano de altimetría del archivo SVG:</p>
+        <input type="file" id="svg" name="svg" accept=".svg">
+        <p>¡Aquí se mostrará el plano de altimetría con el SVG!</p>
     </main>
 </body>
 </html>
