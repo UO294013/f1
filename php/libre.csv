@@ -1,0 +1,55 @@
+carrera,1,Bahrain,Bahrain International Circuit,2024-03-02,57
+carrera,2,Arabia Saudí,Jeddah Corniche Circuit,2024-03-09,50
+carrera,3,Australia,Albert Park Gran Prix Circuit,2024-03-24,58
+carrera,4,Japón,Suzuka Circuit,2024-04-07,53
+carrera,5,China,Shanghai International Circuit,2024-04-21,56
+carrera,6,Estados Unidos,Miami International Autodrome,2024-05-05,57
+carrera,7,Italia,Autodromo Enzo e Dino Ferrari,2024-05-19,63
+carrera,8,Mónaco,Circuit de Monaco,2024-05-26,78
+carrera,9,Canadá,Circuit Gilles Villeneuve,2024-06-09,70
+carrera,10,España,Circuit de Barcelona-Catalunya,2024-06-23,66
+escuderia,1,Red Bull,Milton Keynes,500000000
+escuderia,2,Ferrari,Maranello,450000000
+escuderia,3,Mercedes,Brackley,475000000
+escuderia,4,McLaren,Woking,300000000
+escuderia,5,Aston Martin,Silverstone,275000000
+piloto,1,Max Verstappen,Países Bajos,26
+piloto,2,Sergio Pérez,México,34
+piloto,3,Charles Leclerc,Mónaco,26
+piloto,4,Carlos Sainz,España,29
+piloto,5,Lewis Hamilton,Reino Unido,39
+piloto,6,George Russell,Reino Unido,26
+piloto,7,Lando Norris,Reino Unido,24
+piloto,8,Oscar Piastri,Australia,23
+piloto,9,Fernando Alonso,España,43
+piloto,10,Lance Stroll,Canadá,25
+piloto_escuderia,1,1
+piloto_escuderia,1,2
+piloto_escuderia,2,3
+piloto_escuderia,2,4
+piloto_escuderia,3,5
+piloto_escuderia,3,6
+piloto_escuderia,4,7
+piloto_escuderia,4,8
+piloto_escuderia,5,9
+piloto_escuderia,5,10
+resultado,1,1,1
+resultado,1,2,2
+resultado,2,3,3
+resultado,2,5,9
+resultado,3,4,1
+resultado,3,6,17
+resultado,4,7,5
+resultado,4,8,8
+resultado,5,9,7
+resultado,5,10,15
+resultado,6,1,2
+resultado,6,10,17
+resultado,7,2,8
+resultado,7,9,19
+resultado,8,3,1
+resultado,8,8,2
+resultado,9,4,16
+resultado,9,7,2
+resultado,10,5,3
+resultado,10,6,4
