@@ -1,0 +1,149 @@
+/* Vicente Megido García (UO294013) */
+
+/* Especificidad del selector: 002 */
+body main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Especificidad del selector: 002 */
+main h2 {
+    grid-column: span 4;
+    font-size: 1.4em;
+    text-align: center;
+    align-self: center;
+}
+
+/* Especificidad del selector: 003 */
+main script~div {
+    width: 10vw;
+    height: 10vw; /* Para mantener la proporción redonda utilizo vw */
+    background-color: #404040; /* Advertencia controlada: Color de primer plano (foreground/fuente) heredado de html */
+    border: 0.2em solid #000000;
+    border-radius: 50%;
+}
+
+/* Especificidad del selector: 022 */
+main.load>div:nth-child(4) {
+    animation: lightUp 0.5s forwards;
+}
+
+/* Especificidad del selector: 022 */
+main.load>div:nth-child(5) {
+    animation: lightUp 0.5s forwards 0.5s;
+}
+
+/* Especificidad del selector: 022 */
+main.load>div:nth-child(6) {
+    animation: lightUp 0.5s forwards 1s;
+}
+
+/* Especificidad del selector: 022 */
+main.load>div:nth-child(7) {
+    animation: lightUp 0.5s forwards 1.5s;
+}
+
+/* Especificidad del selector: 012 */
+main.unload>div {
+    animation: out;
+}
+
+/* Keyframe de encendido */
+@keyframes lightUp {
+    from { background-color: #404040; }
+    to { background-color: #DD0000; }
+}
+
+/* Keyframe de apagado */
+@keyframes out {
+    from { background-color: #DD0000; } /* Advertencia controlada: Color de primer plano (foreground/fuente) heredado de html y redefinición del color de fondo (background) para la transición de color */
+    to { background-color: #404040; } /* Advertencia controlada: Color de primer plano (foreground/fuente) heredado de html y redefinición del color de fondo (background) para la transición de color */
+}
+
+/* Especificidad del selector: 002 */
+main p {
+    grid-column: span 4;
+    font-size: 1.1em;
+}
+
+/* Especificidad del selector: 002 */
+main button {
+    grid-column: span 2;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    padding: 1% 10%;
+    font-size: 1.2em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+/* Especificidad del selector: 011 */
+button:disabled {
+    cursor: not-allowed;
+}
+
+/* Especificidad del selector: 002 */
+main form {
+    width: 100%;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+
+/* Especificidad del selector: 002 */
+main input {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 1.1em;
+    resize: none;
+}
+
+/* Especificidad del selector: 002 */
+main label {
+    font-size: 1.1em;
+    text-align: center;
+    align-self: center;
+}
+
+/* Especificidad del selector: 003 */
+main form button {
+    grid-column: span 8;
+    align-self: center;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Especificidad del selector: 002 */
+main section {
+    grid-column: span 4;
+}
+
+/* Portátil L (1440px) */
+@media screen and (max-width: 1440px) {
+
+    /* Especificidad del selector: 002 */
+    main input {
+        grid-column: span 4;
+        font-size: 1em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+
+    /* Especificidad del selector: 002 */
+    main label {
+        grid-column: span 4;
+        font-size: 1em;
+    }
+
+    /* Especificidad del selector: 003 */
+    main form button {
+        font-size: 1em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}

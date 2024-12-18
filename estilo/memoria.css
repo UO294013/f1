@@ -1,0 +1,148 @@
+/* Vicente Megido García (UO294013) */
+
+/* Especificidad del selector: 010 */
+[data-game=memory-game] {
+    padding: 0% 20% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #B60000; /* Advertencia controlada: Color de primer plano (foreground/fuente) heredado de html */
+}
+
+/* Especificidad del selector: 001 */
+h2 {
+    flex: 0 0 100%;
+    text-align: center;
+    color: #FFFFFF; /* Advertencia controlada: Color de fondo (background) heredado de section */
+}
+
+/* Especificidad del selector: 012 */
+main section[data-game="memory-game"] {
+    display: flex;   
+    flex-direction: unset;
+}
+
+/* Especificidad del selector: 001 */
+article {
+    position: relative;
+    width: 20%;
+    height: 10vw;
+    margin: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    background-color: #EBEBE0; /* Advertencia controlada: Color de primer plano (foreground/fuente) heredado de html */
+    border-width: 0.2em;
+    border-style: solid;
+    border-color: #000000;
+    box-shadow: 0 0.8em 1.0em rgba(0, 0, 0, 0.3);
+}
+
+/* Especificidad del selector: 011 */
+article:hover {
+    transform: scale(1.04);
+}
+
+/* Especificidad del selector: 011 */
+article[data-state=flip], article[data-state=revealed] {
+    transform: rotateY(180deg);
+}
+
+/* Especificidad del selector: 002 / 002 */
+article>h3, article>img {
+    font-size: 1.1em;
+    text-align: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+/* Especificidad del selector: 002 */
+article h3 {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Especificidad del selector: 002 */
+article>img {
+    width: 80%;
+    height: 80%;
+    transform: rotateY(180deg);
+}
+
+/* Especificidad del selector: 001 */
+main section button {
+    position: relative;
+    width: 40%;
+    border-width: 0.2em;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 0%;
+}
+
+/* Portatil L (1440px) */
+@media screen and (max-width: 1440px) {
+
+    /* Especificidad del selector: 002 */
+    article>h3 {
+        font-size: 0.9em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}
+
+/* Portatil (1024px) */
+@media screen and (max-width: 1024px) {
+
+    /* Especificidad del selector: 002 */
+    article>h3 {
+        font-size: 0.8em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (max-width: 768px) {
+
+    /* Especificidad del selector: 010 */
+    [data-game=memory-game] {
+        padding: 0% 10% 2%; /* Advertencia controlada: Redefinición de propiedades para preservar la adaptabilidad */
+    }
+    
+    /* Especificidad del selector: 001 */
+    article {
+        border-width: 0.1em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+
+    /* Especificidad del selector: 001 */
+    menu {
+        font-size: 0.8em;
+    }
+
+    /* Especificidad del selector: 002 */
+    section button {
+        padding: 2%;
+    }
+}
+
+/* Movil L (425px) */
+@media screen and (max-width: 425px) {
+
+    /* Especificidad del selector: 010 */
+    [data-game=memory-game] {
+        padding: 0% 5% 1%; /* Advertencia controlada: Redefinición de propiedades para preservar la adaptabilidad */
+    }
+}
+
+/* Movil M (375px) */
+@media screen and (max-width: 375px) {
+    
+    /* Especificidad del selector: 002 */
+    article>h3 {
+        font-size: 0.6em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}

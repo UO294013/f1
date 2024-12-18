@@ -1,0 +1,104 @@
+/* Vicente Megido García (UO294013) */
+
+/* Especificidad del selector: 001 */
+section {   
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Especificidad del selector: 001 */
+button {   
+    border: 0.2em solid #222222;
+    border-radius: 0.5em;
+}
+
+/* Especificidad del selector: 011 */
+button:hover {   
+    transform: scale(1.05);
+}
+
+/* Especificidad del selector: 011 */
+button:disabled {
+    cursor: not-allowed;
+    transform: scale(1);
+}
+
+/* Especificidad del selector: 001 */
+article {   
+    padding: 1%;
+    margin: 1%;
+    width: 20vw;
+    height: 15vh; 
+    background-color: #B60000;
+    color: #ffffff;
+    border: 0.2em solid #000000;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.8);
+}
+
+/* Especificidad del selector: 011 */
+article:hover {   
+    transform: scale(1.05);
+}
+
+/* Portátil L (1440px) */
+@media screen and (max-width: 1440px) {
+
+    /* Especificidad del selector: 001 */
+    article {   
+        width: 28vw; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+        height: 18vh; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}
+
+/* Portatil (1024px) */
+@media screen and (max-width: 1024px) {
+
+    /* Especificidad del selector: 001 */
+    article {   
+        width: 44vw; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (max-width: 768px) {
+    
+    /* Especificidad del selector: 001 */
+    article {  
+        height: 15vh; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+
+    /* Especificidad del selector: 003 */
+    section article h3 {  
+        font-size: 1.1em;
+    }
+
+    /* Especificidad del selector: 003 */
+    section article p {  
+        font-size: 0.8em;
+    }
+}
+
+/* Movil L (425px) */
+@media screen and (max-width: 425px) {
+
+    /* Especificidad del selector: 001 */
+    article {  
+        width: 90vw; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}
+
+/* Movil M (375px) */
+@media screen and (max-width: 375px) {
+
+    /* Especificidad del selector: 003 */
+    section article h3 {  
+        font-size: 1em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+
+    /* Especificidad del selector: 003 */
+    section article p {  
+        font-size: 0.7em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}

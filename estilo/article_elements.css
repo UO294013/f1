@@ -1,0 +1,191 @@
+/* Vicente Megido García (UO294013) */
+
+/* Especificidad del selector: 001 */
+section {   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Especificidad del selector: 001 */
+article {  
+    text-wrap: wrap;
+    padding: 1%;
+    width: 25vw;
+    height: 40vh;
+    margin: 1%;
+    background-color: #B60000;
+    color: #ffffff;
+    border: 0.2em solid #000000;
+    border-radius: 0.8em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.8);
+}
+
+/* Especificidad del selector: 011 */
+article:hover {  
+    transform: scale(1.05);
+}
+
+/* Especificidad del selector: 003 */
+section article h3 {  
+    padding: 5%;
+    background-color: #000000; /* Advertencia controlada: Color de fuente heredado de article */
+    border: 0.2em solid #000000;
+    border-radius: 0.8em;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* Especificidad del selector: 003 */
+section article p {  
+    font-size: 1.2em;
+}
+
+/* Especificidad del selector: 003 */
+section article img {
+    display: block;
+    margin: auto;
+    background-color: #aaaaaa; /* Advertencia controlada: Color de primer plano (foreground/fuente) heredado de article */
+    border: 0.2em solid #000000;
+}
+
+/* Especificidad del selector: 001 */
+form {
+    margin: auto;
+    padding: 1%;
+    background-color: #B60000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.2em solid #000000;
+    border-radius: 0;
+}
+
+/* Especificidad del selector: 002 */
+form h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Especificidad del selector: 002 */
+form label {
+    margin: 0.5em 0;
+    font-size: 1em;
+    align-self: flex-start;
+}
+
+/* Especificidad del selector: 002 / 002 */
+form input, form textarea {
+    margin: 0.5em 0;
+    line-height: 2em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.1em solid #000000;
+}
+
+/* Especificidad del selector: 002 */
+form textarea {
+    align-content: start;
+    text-align: start;
+    padding: 1%;
+}
+
+/* Especificidad del selector: 002 */
+form button {
+    margin-top: 1em;
+    padding: 1.2em 1.5em;
+    align-self: center;
+}
+
+/* Especificidad del selector: 012 */
+form button:hover {
+    transform: scale(1.05);
+    color: #B60000; /* Advertencia controlada: Color de fondo (background) heredado de button definido en estilo.css */
+}
+
+/* Portátil L (1440px) */
+@media screen and (max-width: 1440px) {
+
+    /* Especificidad del selector: 003 */
+    section article h3 {  
+        font-size: 1.2em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+
+    /* Especificidad del selector: 003 */
+    section article p {  
+        font-size: 1em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}
+
+/* Portatil (1024px) */
+@media screen and (max-width: 1024px) {
+
+    /* Especificidad del selector: 001 */
+    article {  
+        height: 35vh; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+
+    /* Especificidad del selector: 003 */
+    section article h3 {  
+        font-size: 1.1em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+
+    /* Especificidad del selector: 003 */
+    section article p {  
+        font-size: 0.9em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (max-width: 768px) {
+    
+    /* Especificidad del selector: 001 */
+    article {  
+        width: 35vw; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+        height: 32vh; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+
+    /* Especificidad del selector: 003 */
+    section article h3 {  
+        font-size: 1em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+
+    /* Especificidad del selector: 003 */
+    section article p {  
+        font-size: 0.8em; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+}
+
+/* Movil L (425px) */
+@media screen and (max-width: 425px) {
+
+    /* Especificidad del selector: 001 */
+    article {  
+        width: 70vw; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+    }
+
+    /* Especificidad del selector: 001 */
+    menu {
+        width: 70vw;
+    }
+
+    /* Especificidad del selector: 003 */
+    main section h2 {
+        font-size: 1.0em;
+    }
+
+    /* Especificidad del selector: 003 */
+    main section button {
+        font-size: 0.8em;
+    }
+}
+
+/* Movil M (375px) */
+@media screen and (max-width: 375px) {
+
+    /* Especificidad del selector: 001 */
+    main {
+        font-size: 0.7em;
+    }
+}
