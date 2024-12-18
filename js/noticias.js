@@ -22,9 +22,9 @@ class Noticias {
                 var noticias = lector.result.split('\n');
                 
                 var section = document.createElement("section");
-                // Procesamiento de cada línea para crear una noticia
+                // Procesamiento de cada linea para crear una noticia
                 noticias.forEach(noticia => {
-                    if (noticia.trim() !== "") { // Evitar noticias vacías
+                    if (noticia.trim() !== "") { // Evitar noticias vacias
                         var [titulo, contenido, autor] = noticia.split('_');
 
                         var article = document.createElement("article");

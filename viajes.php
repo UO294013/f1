@@ -79,7 +79,7 @@
     <meta charset="UTF-8" />
     <title>F1 Desktop</title>
     <link rel="icon" href="multimedia/imagenes/favicon.ico" sizes="48x48">
-    <meta name="author" content="Vicente Megido García (UO294013)" />
+    <meta name="author" content="Vicente Megido Garcia (UO294013)" />
     <meta name="description" content="Información relacionada con los viajes durante el campeonato de la F1" />
     <meta name="keywords" content="F1, Fórmula 1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -96,7 +96,7 @@
             <a href="piloto.html" title="Ir a Piloto">Piloto</a>
             <a href="noticias.html" title="Ir a Noticias">Noticias</a>
             <a href="calendario.html" title="Ir a Calendario">Calendario</a>
-            <a href="meteorología.html" title="Ir a Meteorología">Meteorología</a>
+            <a href="meteorologia.html" title="Ir a Meteorologia">Meteorologia</a>
             <a href="circuito.html" title="Ir a Circuito">Circuito</a>
             <a class="active" href="viajes.php" title="Ir a Viajes">Viajes</a>
             <a href="juegos.html" title="Ir a Juegos">Juegos</a>
@@ -112,7 +112,7 @@
         ?>
         <button>Cargar mapas</button>
         <div hidden>
-            <!-- Aquí irá el mapa dinámico -->
+            <!-- Aqui irá el mapa dinámico -->
         </div>
         <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfmip4lu4OXDuJ-DSiuoXLYb26CCQQEGk&loading=async&libraries=marker"></script>
         <!-- Slider container -->

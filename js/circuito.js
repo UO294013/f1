@@ -85,7 +85,7 @@ class Circuito {
                 generarEtiqueta(section, "Localidad", localidad);
             }
             if (pais) {
-                generarEtiqueta(section, "País", pais);
+                generarEtiqueta(section, "Pais", pais);
             }
             if (vueltas) {
                 generarEtiqueta(section, "Número de vueltas", vueltas);
@@ -132,7 +132,7 @@ class Circuito {
 
                 // Procesamiento de los videos
                 const pVideo = document.createElement("p");
-                pVideo.textContent = "Vídeos: ";
+                pVideo.textContent = "Videos: ";
                 section.appendChild(pVideo);
                 const videos = circuito.querySelectorAll("videos video");
                 videos.forEach(video => {
@@ -142,7 +142,7 @@ class Circuito {
                     section.appendChild(vid);
                 });
 
-                // Procesamiento de las coordenadas de la línea de meta
+                // Procesamiento de las coordenadas de la linea de meta
                 const coordenadaMeta = circuito.querySelector("coordenadas coordenada");
                 if (coordenadaMeta) {
                     const longitudMeta = coordenadaMeta.getAttribute("longitud");
@@ -229,7 +229,7 @@ class Circuito {
         this.initMap();
         // Creación del objeto Polyline
         const spaPolyline = new google.maps.Polyline({
-            path: coordinates,  // Coordenadas extraídas del KML
+            path: coordinates,  // Coordenadas extraidas del KML
             geodesic: true,
             strokeColor: "#FF0000",
             strokeOpacity: 1.0,

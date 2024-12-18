@@ -24,7 +24,7 @@ class Pais {
     }
 
     getNombre() {
-        return ("<p>País: " + this.nombre + "</p>");
+        return ("<p>Pais: " + this.nombre + "</p>");
     }
 
     getCapital() {
@@ -124,11 +124,11 @@ class Pais {
                     var mostFrequentIcon = Object.keys(data.iconCounter).reduce((a, b) => data.iconCounter[a] > data.iconCounter[b] ? a : b);
                     var iconUrl = `https://openweathermap.org/img/wn/${mostFrequentIcon}@2x.png`;
     
-                    // Crear un artículo por día
+                    // Crear un articulo por dia
                     var article = $("<article></article>");
-                    article.append(`<h3>Día: ${fecha}</h3>`);
+                    article.append(`<h3>Dia: ${fecha}</h3>`);
                     article.append(`<p>Temperatura máxima: ${maxTempRounded}°C</p>`);
-                    article.append(`<p>Temperatura mínima: ${minTempRounded}°C</p>`);
+                    article.append(`<p>Temperatura minima: ${minTempRounded}°C</p>`);
                     article.append(`<p>Humedad media: ${avgHumidity}%</p>`);
                     article.append(`<p>Lluvia total: ${data.totalRain.toFixed(1)} mm</p>`);
                     article.append(`<img src="${iconUrl}" alt="Icono del clima">`);
@@ -137,7 +137,7 @@ class Pais {
                 $("body").append(section);
             },
             error: (error) => {
-                console.error("Error al realizar la consulta al servicio de meteorología:", error);
+                console.error("Error al realizar la consulta al servicio de meteorologia:", error);
             }
         });
     }

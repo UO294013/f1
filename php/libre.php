@@ -14,7 +14,7 @@
             $this->dbname = "f1strategy";
         }
 
-        // Función para crear la base de datos y las tablas leyendo línea por línea del archivo f1strategy.sql
+        // Función para crear la base de datos y las tablas leyendo linea por linea del archivo f1strategy.sql
         public function createDatabase() {
             $conn = new mysqli($this->server, $this->user, $this->pass);
             if (($file = fopen("f1strategy.sql", 'r')) !== false) {
@@ -117,7 +117,7 @@
     <meta charset="UTF-8" />
     <title>F1 Desktop</title>
     <link rel="icon" href="../multimedia/imagenes/favicon.ico" sizes="48x48">
-    <meta name="author" content="Vicente Megido García (UO294013)" />
+    <meta name="author" content="Vicente Megido Garcia (UO294013)" />
     <meta name="description" content="Ejercicio extra de PHP con base de datos: F1Strategy" />
     <meta name="keywords" content="F1, Fórmula 1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -132,7 +132,7 @@
             <a href="../piloto.html" title="Ir a Piloto">Piloto</a>
             <a href="../noticias.html" title="Ir a Noticias">Noticias</a>
             <a href="../calendario.html" title="Ir a Calendario">Calendario</a>
-            <a href="../meteorología.html" title="Ir a Meteorología">Meteorología</a>
+            <a href="../meteorologia.html" title="Ir a Meteorologia">Meteorologia</a>
             <a href="../circuito.html" title="Ir a Circuito">Circuito</a>
             <a href="../viajes.php" title="Ir a Viajes">Viajes</a>
             <a class="active" href="../juegos.html" title="Ir a Juegos">Juegos</a>
